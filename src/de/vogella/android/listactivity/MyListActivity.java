@@ -8,16 +8,13 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class MyListActivity extends ListActivity {
-	public void onCreate(Bundle icicle) {
+	public void onCreate(Bundle icicle){
 		super.onCreate(icicle);
-		String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
-				"Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
-				"Linux", "OS/2" };
-		// Use your own layout
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-				R.layout.rowlayout, R.id.label, values);
+		String[] values = new String[] { "Android", "iPhone", "WindowsMobile", "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X", "Linux", "OS/2"};
+		MySimpleArrayAdapter adapter = new MySimpleArrayAdapter(this, values);
 		setListAdapter(adapter);
 	}
+
 
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
