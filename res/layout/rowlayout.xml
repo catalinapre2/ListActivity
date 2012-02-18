@@ -10,7 +10,8 @@
         android:layout_marginLeft="4dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="4dp"
-        android:src="@drawable/ic_launcher" >
+        android:src="@drawable/ic_launcher" 
+        android:contentDescription="@drawable/ic_launcher">
     </ImageView>
 
     <TextView
@@ -21,4 +22,12 @@
         android:textSize="20dp" >
     </TextView>
 
+<!--     <SeekBar -->
+<!--         android:id="@+id/frequency_slider" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:max="20" -->
+<!--         android:progress="15" -->
+<!--         android:secondaryProgress="0"> -->
+<!--     </SeekBar> -->
 </LinearLayout>
